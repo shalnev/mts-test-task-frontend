@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { Channel } from '../types/channel.type';
 
 @Component({
@@ -7,13 +7,10 @@ import { Channel } from '../types/channel.type';
   styleUrls: ['./channel.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ChannelComponent implements OnInit {
+export class ChannelComponent {
 
   @Input() channel: Channel;
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }

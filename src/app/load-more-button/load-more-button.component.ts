@@ -1,15 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-load-more-button',
   templateUrl: './load-more-button.component.html',
   styleUrls: ['./load-more-button.component.scss']
 })
-export class LoadMoreButtonComponent implements OnInit {
+export class LoadMoreButtonComponent {
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }
