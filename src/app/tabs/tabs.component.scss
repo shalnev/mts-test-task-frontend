@@ -1,0 +1,18 @@
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  &__list {
+    display: flex;
+  }
+  &__tab {
+    width: 160px;
+    &_active {
+      border-bottom: #BA9D5A 1px;
+    }
+  }
+  &__anchor {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+  }
+}

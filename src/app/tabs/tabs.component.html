@@ -1,0 +1,9 @@
+<div class="tabs">
+  <div class="tabs__list">
+    <div class="tabs__tab" *ngFor="let tab of tabs" (click)="selectTab(tab)" [class.tabs__tab_active]="tab.active">
+      <a class="tabs__anchor">{{tab.title}}</a>
+    </div>
+  </div>
+  <app-filters></app-filters>
+</div>
+<ng-content></ng-content>

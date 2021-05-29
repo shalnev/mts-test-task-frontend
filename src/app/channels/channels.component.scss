@@ -1,0 +1,44 @@
+
+.tv-list {
+  &__channels {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    margin: 22px 0 0 0;
+  }
+  &__count {
+    color: white;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+
+@media (min-width: 320px) {
+  .tv-list {
+    &__channels {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .tv-list {
+    &__channels {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .tv-list {
+    &__channels {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<div class="filters" *ngIf="(paginationConfig | async) as loadedPaginationConfig">
+  <select>
+    <option disabled>Сортировка</option>
+    <option value="default">По умолчанию</option>
+    <option value="asc">По возрастанию</option>
+    <option value="desc">По убыванию</option>
+  </select>
+  <select *ngIf="(genreNames | async) as loadedGenreNames">
+    <option disabled>Телеканалы</option>
+    <option *ngFor="let genreName of loadedGenreNames" [value]="genreName">{{genreName}}</option>
+    <option value="clear">Сбросить выбор</option>
+  </select>
+</div>

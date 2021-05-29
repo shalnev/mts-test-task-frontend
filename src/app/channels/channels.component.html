@@ -1,0 +1,7 @@
+<div class="tv-list" *ngIf="(channelsData | async) as loadedChannelsData">
+  <p class="tv-list__count">{{loadedChannelsData.total}} каналов</p>
+  <div class="tv-list__channels">
+    <app-channel *ngFor="let channel of loadedChannelsData.channelDetails" [channel]="channel"></app-channel>
+  </div>
+  <app-load-more-button class="tv-list__button" (click)="loadMore()"></app-load-more-button>
+</div>
