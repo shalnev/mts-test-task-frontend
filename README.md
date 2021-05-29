@@ -1,27 +1,14 @@
 # MtsTestTask
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.2.
+Тестовое задания для MTC на должность фронтенда. Ограничение выполнения: 4 часа.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Результаты проделанной работы:
+ - [x] Angular
+- [x] JSON положить в папку assets, данные получать через http запрос
+ - [ ] Фильтрация и сортировка
+ - [x] Фильтр и сортировка должны сохраняться и восстанавливаться при повторном открытии страницы
+ - [x] Количество отображаемых плиток должно зависеть от разрешения экрана
+ - [x] Первично должно быть отображено не более 24 плиток
+ - [x] Добавить кнопку «Еще», которая будет дополнительно отображать +12 шт.
+ - [ ] При наведении на карточку канала, должна быть плавная анимация (немного приподнимается вверх).
+ - [x] Вкладки должны переключаться, на вкладках разметить текст «Отсутствуют данные»
